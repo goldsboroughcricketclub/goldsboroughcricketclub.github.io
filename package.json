@@ -1,0 +1,73 @@
+{
+  "name": "AndyThornton",
+  "version": "1.0.0",
+  "description": "Andy Thornton",
+  "main": "httpdocs/assets-dev/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "svn",
+    "url": "https://dev.9xb.com/svn/Peracto/trunk"
+  },
+  "browser": {
+    "jquery": "httpdocs/assets-dev/js/libs/jquery.js",
+    "fastclick": "httpdocs/assets-dev/js/libs/fastclick.js",
+    "magnific-popup": "httpdocs/assets-dev/js/libs/magnific-popup.js",
+    "mCustomScrollbar": "httpdocs/assets-dev/js/libs/jquery.mCustomScrollbar.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "fastclick": "$",
+    "magnific-popup": "$",
+    "mCustomScrollbar": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "author": "Michael Cockle",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "browserify": "latest",
+    "browserify-shim": "latest",
+    "connect": "latest",
+    "dev-ip": "latest",
+    "event-stream": "latest",
+    "express": "latest",
+    "extend": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-filesize": "latest",
+    "gulp-jshint": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-streamify": "latest",
+    "gulp-svgstore": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "gulp.spritesmith": "latest",
+    "immutable": "latest",
+    "install": "latest",
+    "jshint": "latest",
+    "lodash": "latest",
+    "lodash.assign": "latest",
+    "portscanner": "latest",
+    "pretty-hrtime": "latest",
+    "readable-stream": "latest",
+    "resp-modifier": "latest",
+    "ua-parser-js": "latest",
+    "vinyl-buffer": "latest",
+    "vinyl-fs": "latest",
+    "vinyl-source-stream": "latest",
+    "watchify": "latest"
+  },
+  "dependencies": {}
+}

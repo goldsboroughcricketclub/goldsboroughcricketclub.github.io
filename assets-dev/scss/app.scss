@@ -1,0 +1,65 @@
+@import "settings";
+@import "foundation";
+
+
+header {
+  @include grid-row;
+
+  .logo  { @include grid-column($columns:3, $center:true); }
+  padding-bottom: em-calc(10px);
+
+}
+
+
+.main-content {
+  @include grid-row;
+
+  aside  {
+    @include grid-column($columns:6);
+    // @media #{$medium-up} {
+    //   @include grid-column($columns:3);
+    // }
+  }
+
+  article  {
+    @include grid-column($columns:6);
+    // @media #{$medium-up} {
+    //   @include grid-column($columns:8, $offset: 1);
+    // }
+  }
+
+}
+
+
+// over ride
+.top-bar.expanded .toggle-topbar a span {
+  box-shadow: none;
+}
+
+
+
+
+.box {
+  @media all and (max-width: 1023px) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+.home {
+  .box {
+    header {
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+      h2 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+  .index-card {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

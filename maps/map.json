@@ -1,0 +1,308 @@
+{
+  "places": [{
+    "title": "Goldsborough CC",
+    "description": "Main St Goldsborough<br> Knaresborough<br> North Yorkshire HG5 8NW<br> Tel:07761 860 285<\/p>",
+    "lat": 54.001387537213866,
+    "lng": -1.422128677368164
+  }, {
+    "title": "Arthington",
+    "description": "",
+    "lat": 53.898776,
+    "lng": -1.581323
+  }, {
+    "title": "Almsford Oval",
+    "description": "Bilton Gas Sports &amp; Knaresborough Forest 3rds<br /> play their home fixtures at Almsford Oval<\/strong><\/p>",
+    "lat": 53.976345,
+    "lng": -1.524374
+  }, {
+    "title": "Alne",
+    "description": "",
+    "lat": 54.081964,
+    "lng": -1.237797
+  }, {
+    "title": "Blubberhouses",
+    "description": "",
+    "lat": 53.995251,
+    "lng": -1.745925
+  }, {
+    "title": "Birstwith",
+    "description": "",
+    "lat": 54.035855,
+    "lng": -1.636126
+  }, {
+    "title": "Bishop Thornton",
+    "description": "",
+    "lat": 54.067498,
+    "lng": -1.590850
+  }, {
+    "title": "Bolton Abbey",
+    "description": "",
+    "lat": 53.973304,
+    "lng": -1.892760
+  }, {
+    "title": "Boroughbridge",
+    "description": "Helperby 3rds play their home fixtures at Boroughbridge",
+    "lat": 54.093870,
+    "lng": -1.389878
+  }, {
+    "title": "Burton Leonard",
+    "description": "",
+    "lat": 54.070857,
+    "lng": -1.506291
+  }, {
+    "title": "Burnt Yates",
+    "description": "",
+    "lat": 54.046218,
+    "lng": -1.615312
+  }, {
+    "title": "Crakehall",
+    "description": "",
+    "lat": 54.305010,
+    "lng": -1.625150
+  }, {
+    "title": "Dacre Banks",
+    "description": "",
+    "lat": 54.055376,
+    "lng": -1.697012
+  }, {
+    "title": "Darley",
+    "description": "",
+    "lat": 54.028432,
+    "lng": -1.703653
+  }, {
+    "title": "Dishforth",
+    "description": "",
+    "lat": 54.146626,
+    "lng": -1.413465
+  }, {
+    "title": "Galphay and Winksley",
+    "description": "",
+    "lat": 54.146538,
+    "lng": -1.604058
+  }, {
+    "title": "Glasshouses",
+    "description": "Killinghall 3rds play their home fixtures at Glasshouses",
+    "lat": 54.074656,
+    "lng": -1.735851
+  }, {
+    "title": "Hampsthwaite",
+    "description": "Hampsthwaite 3rds play their home fixtures at Belmont Grosvenor School, Birstwith",
+    "lat": 54.024449,
+    "lng": -1.603178
+  }, {
+    "title": "Harrogate Strays",
+    "description": "Harrogate Strays and Harrogate 4ths play on the Nursery Ground at St Georges Road.",
+    "lat": 53.977493,
+    "lng": -1.539717
+  }, {
+    "title": "Helperby",
+    "description": "Helperby 3rds play their home fixtures at Boroughbridge",
+    "lat": 54.121470,
+    "lng": -1.324732
+  }, {
+    "title": "Huby",
+    "description": "Pannal 3rds and 4ths play their home fixtures at Huby",
+    "lat": 53.920339,
+    "lng": -1.576238
+  }, {
+    "title": "Killinghall",
+    "description": "",
+    "lat":  54.02322,
+    "lng":  -1.56699
+  }, {
+    "title": "Kirkby Malzeard",
+    "description": "",
+    "lat": 54.162663,
+    "lng": -1.650079
+  }, {
+    "title": "Kirklington",
+    "description": "Sharow 3rds play their home fixtures at Kirklington",
+    "lat": 54.227837,
+    "lng": -1.512079
+  }, {
+    "title": "Knaresborough Forest",
+    "description": "Knaresborough Forest 3rds play their home fixtures at Almsford Oval",
+    "lat": 53.998966,
+    "lng": -1.466278
+  }, {
+    "title": "Little Ribston",
+    "description": "",
+    "lat": 53.973581,
+    "lng": -1.404705
+  }, {
+    "title": "Lofthouse and Middlesmoor",
+    "description": "",
+    "lat": 54.188124,
+    "lng": -1.561915
+  }, {
+    "title": "Marton-cum-Grafton",
+    "description": "",
+    "lat": 54.062750,
+    "lng": -1.360180
+  }, {
+    "title": "Masham",
+    "description": "",
+    "lat": 54.223233,
+    "lng": -1.654494
+  }, {
+    "title": "Markington",
+    "description": "",
+    "lat": 54.081536,
+    "lng": -1.561496
+  }, {
+    "title": "Middleham",
+    "description": "",
+    "lat": 54.283191,
+    "lng": -1.802562
+  }, {
+    "title": "Newton-le-Willows",
+    "description": "",
+    "lat": 54.298837,
+    "lng": -1.672304
+  }, {
+    "title": "Newby Hall",
+    "description": "",
+    "lat": 54.107666,
+    "lng": -1.458499
+  }, {
+    "title": "Northallerton",
+    "description": "Northallerton Wolves play their home fixtures at Thorpe Perrow",
+    "lat": 54.261991,
+    "lng": -1.597738
+  }, {
+    "title": "North Stainley",
+    "description": "",
+    "lat": 54.188124,
+    "lng": -1.561915
+  }, {
+    "title": "Ouseburn",
+    "description": "Ouseburn 3rds play their home fixtures at Marton cum Grafton",
+    "lat": 54.053846,
+    "lng": -1.319829
+  }, {
+    "title": "Pannal",
+    "description": "Pannal 3rds and 4ths play their home fixtures at Huby<",
+    "lat": 53.956426,
+    "lng": -1.542592
+  }, {
+    "title": "Pannal Ash",
+    "description": "",
+    "lat": 53.976686,
+    "lng": -1.579521
+  }, {
+    "title": "Pateley Bridge",
+    "description": "",
+    "lat": 54.083864,
+    "lng": -1.761541
+  }, {
+    "title": "Raskelf",
+    "description": "",
+    "lat": 54.130656,
+    "lng": -1.244888
+  }, {
+    "title": "Rainton",
+    "description": "",
+    "lat": 54.169155,
+    "lng": -1.431785
+  }, {
+    "title": "Ripon",
+    "description": "Ripon 3rds play their home fixtures at Ripon Grammar School",
+    "lat": 54.134786,
+    "lng": -1.535479
+  }, {
+    "title": "Ripon Grammar School",
+    "description": "Ripon 3rds and Studley Royal 5ths play their home fixtures at Ripon Grammar School",
+    "lat": 54.139236,
+    "lng": -1.537528
+  }, {
+    "title": "Ripley",
+    "description": "",
+    "lat": 54.036724,
+    "lng": -1.567633
+  }, {
+    "title": "Scotton",
+    "description": "",
+    "lat": 54.032477,
+    "lng": -1.498293
+  }, {
+    "title": "Sharow",
+    "description": "Sharow 3rds play their home fixtures at Kirklington",
+    "lat": 54.143434,
+    "lng": -1.504054
+  }, {
+    "title": "Sessay",
+    "description": "Sessay 3rds play their home fixtures at South Kilvington",
+    "lat": 54.254345,
+    "lng": -1.350117
+  }, {
+    "title": "South Kilvington",
+    "description": "",
+    "lat": 54.254376,
+    "lng": -1.349570
+  }, {
+    "title": "Staveley",
+    "description": "",
+    "lat": 54.055332,
+    "lng": -1.436634
+  }, {
+    "title": "Spofforth",
+    "description": "",
+    "lat": 53.951748,
+    "lng": -1.452298
+  }, {
+    "title": "Studley Royal",
+    "description": "Studley Royal 3rds and 4ths play their home fixtures at Studley Deer Park",
+    "lat": 54.132051,
+    "lng": -1.552409
+  }, {
+    "title": "Spennithorne and Harnby",
+    "description": "",
+    "lat": 54.294463,
+    "lng": -1.793808
+  }, {
+    "title": "Thornton-le-Moor",
+    "description": "",
+    "lat": 54.285674,
+    "lng": -1.405392
+  }, {
+    "title": "Thornton Watlass",
+    "description": "",
+    "lat": 54.264848,
+    "lng": -1.640407
+  }, {
+    "title": "Thirsk",
+    "description": "Thirsk 3rds play their home fixtures at Knayton",
+    "lat": 54.285208,
+    "lng": -1.343958
+  }, {
+    "title": "West Tanfield",
+    "description": "",
+    "lat": 54.199617,
+    "lng": -1.581087
+  }, {
+    "title": "Wath and Melmerby",
+    "description": "",
+    "lat": 54.180094,
+    "lng": -1.484721
+
+  }]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
