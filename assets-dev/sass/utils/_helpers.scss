@@ -1,0 +1,57 @@
+.svg-sprite-wrap, .svg-tech-sprite-wrap {
+  display: none;
+}
+
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    position: static;
+    overflow: visible;
+    clip: auto;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+.hidetext {
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+
+.btn-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+i {
+  display: inline-block;
+}
+
+.list-float {
+  li {
+    float: left;
+    margin-right: 1em;
+    list-style-type: none;
+  }
+}
+
+
+.row-sm-pad {
+  [class*="col-"] {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
+
+

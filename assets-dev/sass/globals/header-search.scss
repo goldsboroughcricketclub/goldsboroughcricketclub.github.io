@@ -1,0 +1,119 @@
+
+.close-search {
+    display: none;
+}
+
+.header-search__wrap {
+    position: absolute;
+    width: 100%;
+    z-index: map-get($zindex,  zHeaderSearch);
+    background-color: $brand-green;
+    .header-search__wrap--outer {
+        position: relative;
+        @media screen and (max-width: $fab-max ) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+
+    }
+
+    .header-search__wrap--inner {
+        @media screen and (max-width: $fab-max ) {
+           border-top: solid 1px $brand-green;
+           border-bottom: solid 1px $brand-green;
+           border-right: solid 1px $brand-green;
+       }
+   }
+   .autocomplete {
+    padding: 10px;
+    @media (min-width: $screen-md) {
+        padding: 20px 0;
+    }
+    background-color: #FFF;
+    margin: 0;
+    li {
+        font-size: 16px;
+        line-height: 28px;
+        list-style: none;
+    }
+}
+
+
+
+
+
+.search-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    @media (min-width: $tab-min) {
+
+    }
+
+    @media (min-width: $tab-min) {
+        padding: 24px 0;
+
+    }
+    @media (min-width: $desk-min) {
+        padding: 28px 0;
+    }
+
+
+
+    width: 100%;
+    .search-input {
+        min-width: 1%;
+        flex: 1 1 auto;
+        background-color: #FFF;
+        background-color: $brand-green;
+
+        color: #FFF;
+        border: none;
+        font-family: $font-family-bold;
+        padding-right: 10px;
+        font-size: 20px;
+
+
+        padding-left: 10px;
+        @media all and (min-width: $tab-min) {
+            font-size: 36px;
+        }
+        @media all and (min-width: $screen-md) {
+            padding-left: 0px;
+
+        }
+
+
+        &::placeholder {
+            color: inherit;
+            font-size: inherit;
+            color: inherit;
+            font-family: inherit;
+        }
+    }
+
+    .btn-search {
+        flex: 0 0 50px;
+        background-color: #FFF;
+        color: $brand-green;
+        padding: 14px 10px 8px;
+        .svg-icon {
+            fill: currentColor;
+            fill: $brand-green;
+        }
+    }
+}
+}
+.auto-complete__wrap--inner {
+    // max-width: 600px;
+}
+.auto-complete__wrap {
+    background-color: #FFF;
+    // padding-bottom: 20px;
+    // @media all and (min-width: $tab-min) {
+        // padding-bottom: 30px;
+    // }
+}

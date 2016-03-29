@@ -1,0 +1,292 @@
+$nav-pad-small: 10px 0px;
+$nav-pad: 10px 20px;
+// $header-width: 1230px;
+$header-width: 1140px;
+
+
+
+// #searchHeader {
+//     display: block !important;
+// }
+// #searchToggle {
+//     background-color: $brand-green;
+// }
+
+
+.header__global-wrap {
+    position: relative;
+}
+
+.search-active {
+    @include anim-all(200ms, ease-in-out);
+    background-color: $brand-green !important;
+    &:hover {
+        .svg-magnify {
+            fill: #FFF !important;
+        }
+    }
+    .svg-magnify {
+        fill: #FFF !important;
+    }
+}
+
+
+
+.header-active {
+    border-bottom: none !important;
+    @media all and (min-width: $fab-min) {
+        @include anim-brd-col(300ms, ease-in-out);
+        border-bottom: solid 1px $brand-green !important;
+    }
+}
+
+
+
+
+
+
+.svg-wrap-active {
+    fill: $brand-green !important;
+}
+
+
+
+.header__nav-wrap {
+    // position: relative;
+    border-bottom: solid 1px $gray-light;
+    @include pie-clearfix();
+}
+
+.header__nav {
+    max-width: $header-width;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    > a {
+        padding: 15px;
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .header__phone-icon-wrap {
+        @media all and (min-width: 1200px) {
+            display: none;
+        }
+        &:hover {
+            .svg-phone {
+                color: $brand-green;
+                fill: currentColor;
+            }
+        }
+    }
+
+    .header__phone {
+        margin: 0;
+        display: none;
+        @media all and (min-width: 1200px) {
+            display: block;
+        }
+    }
+}
+
+
+.mob-menu {
+    padding: $nav-pad-small;
+    border-right: solid 1px $gray-light;
+    svg {
+        margin: 0 auto;
+    }
+    @media all and (min-width: $tab-min) {
+        display:none !important;
+    }
+}
+
+
+
+.header__nav-links {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    @media (min-width: $screen-md) {
+        width: auto;
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+    }
+
+    @media (max-width: $fab-max ) {
+        display: none;
+        width: 100%;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        top: 50px;
+        background-color: #FFF;
+        z-index: map-get($zindex,  zMobMenu);
+
+        li {
+            border-bottom: solid 1px $gray-light;
+            a {
+                display: block;
+                padding: 10px 15px;
+
+                @include anim-bg-col(200ms, ease-in-out);
+                &:hover {
+                    text-decoration: none;
+                    background-color: $brand-green;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $tab-min) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            &:first-of-type {
+                a {
+                    border-left: solid 1px $gray-light;
+                }
+            }
+            a {
+                border-right: solid 1px $gray-light;
+                padding: $nav-pad;
+
+            }
+        }
+    }
+}
+
+
+
+
+.auth {
+    .svg-icon {
+        height: 26px;
+    }
+    width: 100%;
+    // height: 100%;
+    @media (min-width: $screen-md) {
+        width: auto;
+        border-left: solid 1px $gray-light;
+    }
+
+    @media screen and (max-width: $screen-md ) {
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $tab-max) {
+        border-left: solid 1px $gray-light;
+    }
+
+    a {
+        svg {
+            display: block;
+        }
+    }
+}
+
+
+
+.auth__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100%;
+    border-right: solid 1px $gray-light;
+    padding: $nav-pad-small;
+    @media all and (min-width: $tab-min) {
+        padding: $nav-pad;
+    }
+    @media (max-width: $fab-max ) {
+        svg {
+            margin: 0 auto;
+        }
+    }
+    @include anim-all(200ms, ease-in-out);
+    &:first-of-type {
+        border-left: solid 1px $gray-light;
+    }
+    &:hover {
+        .svg-icon {
+            color: $brand-green
+            ;            fill: currentColor;
+        }
+    }
+}
+
+
+
+
+
+.header__search {
+    padding: $nav-pad-small;
+    border-right: solid 1px $gray-light;
+
+    @media (max-width: $fab-max ) {
+        flex-basis: 100%;
+        svg {
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+.header__basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        flex: 0 0 auto; // needed iphone
+
+
+        @media (max-width: $fab-max ) {
+            padding-left: 10px;
+            flex: 1 0 100px;
+            svg {
+            }
+        }
+
+
+        &:hover {
+            text-decoration: none !important;
+            span {
+                color: $brand-green;
+            }
+        }
+        span {
+            font-size: 12px;
+            line-height: 12px;
+            @media all and (min-width: $tab-min) {
+                line-height: 15px;
+                font-size: 15px;
+            }
+
+        }
+        .basket__amount {
+            margin-right: 4px;
+        }
+        .basket__count {
+            margin-right: 0px;
+            color: $brand-red;
+            @media all and (min-width: $tab-min) {
+                margin-right: 8px;
+            }
+        }
+    }

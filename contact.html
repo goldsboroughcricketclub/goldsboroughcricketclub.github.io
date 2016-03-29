@@ -1,0 +1,66 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>MC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        h1 {
+            margin-bottom: 30px;
+        }
+        #gto {
+            display: none;
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<!--
+
+    http://michaelcockle.co.uk/index.php
+https://github.com/koistya/react-static-boilerplate
+
+-->
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <h1>Contact Us</h1>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <form id="myform" method="POST">
+                    <!--<form id="myform">-->
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="name" placeholder="Your name">
+                        <input class="form-control" type="email" name="_replyto" placeholder="Your email">
+                        <input type="hidden" name="_subject" value="Website contact" />
+                        <textarea class="form-control" name="message" placeholder="Your message"></textarea>
+                        <input id="gto" type="text" name="_gotcha" />
+                        <input id="submitContactForm" class="btn btn-primary" type="submit" value="Send">
+                        <input type="hidden" name="_next" value="http://michaelcockle.github.io/thanks.html" />
+                    </div>
+                </form>
+            </div>
+            <script>
+                var contactform =  document.getElementById('myform');
+    contactform.setAttribute('action', '//formspree.io/' + 'michaelantoney' + '@' + 'gmail' + '.' + 'com');
+            </script>
+
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$logo-9xb-big-name: 'logo-9xb-big';
+$logo-9xb-big-x: 0px;
+$logo-9xb-big-y: 0px;
+$logo-9xb-big-offset-x: 0px;
+$logo-9xb-big-offset-y: 0px;
+$logo-9xb-big-width: 400px;
+$logo-9xb-big-height: 352px;
+$logo-9xb-big-total-width: 670px;
+$logo-9xb-big-total-height: 352px;
+$logo-9xb-big-image: '../images/sprites/icons.png';
+$logo-9xb-big: (0px, 0px, 0px, 0px, 400px, 352px, 670px, 352px, '../images/sprites/icons.png', 'logo-9xb-big', );
+$logo-9xb-medium-name: 'logo-9xb-medium';
+$logo-9xb-medium-x: 420px;
+$logo-9xb-medium-y: 0px;
+$logo-9xb-medium-offset-x: -420px;
+$logo-9xb-medium-offset-y: 0px;
+$logo-9xb-medium-width: 250px;
+$logo-9xb-medium-height: 220px;
+$logo-9xb-medium-total-width: 670px;
+$logo-9xb-medium-total-height: 352px;
+$logo-9xb-medium-image: '../images/sprites/icons.png';
+$logo-9xb-medium: (420px, 0px, -420px, 0px, 250px, 220px, 670px, 352px, '../images/sprites/icons.png', 'logo-9xb-medium', );
+$logo-9xb-small-name: 'logo-9xb-small';
+$logo-9xb-small-x: 420px;
+$logo-9xb-small-y: 240px;
+$logo-9xb-small-offset-x: -420px;
+$logo-9xb-small-offset-y: -240px;
+$logo-9xb-small-width: 88px;
+$logo-9xb-small-height: 75px;
+$logo-9xb-small-total-width: 670px;
+$logo-9xb-small-total-height: 352px;
+$logo-9xb-small-image: '../images/sprites/icons.png';
+$logo-9xb-small: (420px, 240px, -420px, -240px, 88px, 75px, 670px, 352px, '../images/sprites/icons.png', 'logo-9xb-small', );
+$spritesheet-width: 670px;
+$spritesheet-height: 352px;
+$spritesheet-image: '../images/sprites/icons.png';
+$spritesheet-sprites: ($logo-9xb-big, $logo-9xb-medium, $logo-9xb-small, );
+$spritesheet: (670px, 352px, '../images/sprites/icons.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

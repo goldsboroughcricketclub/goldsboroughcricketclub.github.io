@@ -1,0 +1,196 @@
+
+.header__nav--sub {
+    z-index: map-get($zindex,  zDropDown);
+    padding: 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    .nav:before, .nav:after {
+
+    }
+
+
+
+    @media screen and (max-width: $fab-max ) {
+        flex-wrap: wrap;
+    }
+    @media all and (min-width: $tab-min) {
+        padding: 30px 0 25px;
+        justify-content: space-between;
+    }
+    @media all and (min-width: $screen-md) {
+        justify-content: center;
+    }
+    .dropdown {
+        @include anim-all(200ms, ease-in-out);
+        &.open, &:hover {
+            > a {
+                color: $brand-green;
+            }
+            .svg-menu {
+                color: $brand-green;
+                fill: currentColor;
+            }
+        }
+    }
+
+    .logo {
+
+        @media screen and (max-width: $fab-max ) {
+            order: 1;
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        max-width: 370px;
+        @media all and (min-width: $screen-md) {
+            margin-left: 140px;
+            margin-right: 140px;
+        }
+    }
+
+    .nav-pills {
+        position: relative;
+        z-index: map-get($zindex,  zDropDown);
+        display: flex;
+        justify-content: space-between;
+        @media all and (min-width: $tab-min) {
+            justify-content: center;
+        }
+    }
+    .nav-pills__left {
+        @media screen and (max-width: $fab-max ) {
+            flex: 0 0 50%;
+            order: 2;
+        }
+        .dropdown-menu {
+            left: 0;
+            @media screen and (max-width: $fab-max ) {
+
+            }
+        }
+    }
+    .nav-pills__right {
+        @media screen and (max-width: $fab-max ) {
+            flex: 0 0 50%;
+            order: 3;
+            right: -30px;
+        }
+        .dropdown-menu {
+            left: auto;
+            right: 0;
+        }
+    }
+    .dropdown-menu {
+        top: 72px;
+
+        @media screen and (max-width: $fab-max ) {
+
+            min-width: 275px;
+        }
+        @media all and (min-width: $tab-min) {
+
+            min-width: 370px;
+        }
+
+        padding: 0;
+        @media (min-width: $screen-md) {
+            margin: 4px 0 0;
+            margin: 2px 0 0;
+
+        }
+
+        font-size: $font-size-base;
+        text-align: left;
+        background-color: $gray-light;
+        border: none;
+        li {
+            border-bottom: 1px solid #FFF;
+            &:last-of-type {
+                border-bottom: none;
+            }
+            a {
+                font-family: $font-family-bold;
+                text-transform: uppercase;
+                color: $brand-gray;
+                padding: 15px 20px;
+                font-size: 14px;
+                @media all and (min-width: $tab-min) {
+
+                    font-size: 16px;
+                }
+
+                display: flex;
+                // flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .svg-icon {
+                    margin-left: 10px;
+                }
+                &:hover {
+                    color: $brand-green;
+                    .svg-icon {
+                        color: $brand-green;
+                        fill: currentColor;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $font-family-bold;
+        font-size: 14px;
+        padding: 0px;
+        @media all and (min-width: $tab-min) {
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+        svg {
+            margin-right: 5px;
+            @media all and (min-width: $tab-min) {
+                margin-right: 15px;
+
+            }
+
+        }
+    }
+}
+
+
+
+.navigation__sidebar {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        border-bottom: 1px solid #FFF;
+// margin-top: 10px;
+// margin-bottom: 10px;
+a {
+    font-family: $font-family-bold;
+    text-transform: uppercase;
+    color: $brand-gray;
+    padding: 15px 10px 15px 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+        text-decoration: none;
+        color: $brand-green;
+        .svg-icon {
+            color: $brand-green;
+            fill: currentColor;
+        }
+    }
+}
+}
+}

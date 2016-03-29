@@ -1,0 +1,25 @@
+.template--modal {
+    .modal__form-wrap {
+        ul, ol {
+            padding: 0;
+        }
+    }
+    .modal__add-to-pinboard {
+        margin-bottom: 20px;
+    }
+    .modal__add-pin-title {
+        text-align: center;
+    }
+    .modal__create-pin-wrap {
+        display: flex;
+        justify-content: space-between;
+        .form-control {
+            width: 50%;
+            margin-right: 10px;
+        }
+        .btn {
+            width: 50%;
+            margin-left: 10px;
+        }
+    }
+}

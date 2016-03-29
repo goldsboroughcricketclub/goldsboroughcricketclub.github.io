@@ -1,0 +1,53 @@
+@mixin pie-clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    *zoom: 1;
+}
+
+
+// @include calc(width, "50% - 20px");
+@mixin calc($property, $expression) {
+    #{$property}: calc(#{$expression});
+}
+
+//@include anim-col(200ms, ease-in-out);
+@mixin anim-col($speed: 250ms, $easing: ease-in-out) {
+    transition: color $speed $easing;
+}
+
+//@include anim-bg-col(200ms, ease-in-out);
+@mixin anim-bg-col($speed: 250ms, $easing: ease-in-out) {
+    transition: background-color $speed $easing;
+}
+
+//@include anim-brd-col(200ms, ease-in-out);
+@mixin anim-brd-col($speed: 250ms, $easing: ease-in-out) {
+     transition: border-color $speed $easing;
+}
+
+//@include anim-all(200ms, ease-in-out);
+@mixin anim-all($speed: 250ms, $easing: ease-in-out) {
+    transition: all $speed $easing;
+}
+
+
+// SVG
+
+//@include anim-svg-fill(200ms, ease-in-out);
+@mixin anim-svg-fill($speed: 250ms, $easing: ease-in-out) {
+     transition: fill $speed $easing;
+}
+
+
+@mixin anim-rotate($speed: 250ms, $easing: ease-in-out) {
+     transition: fill $speed $easing;
+}
+
+
+
+// @include hover-anim(all, $speed-fast, ease-in, $brand, $brand-hover );
+// transition: all .5s ease-in;
+

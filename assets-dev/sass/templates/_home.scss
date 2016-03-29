@@ -1,0 +1,118 @@
+.container-carousel {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.home-shop-now-wrap {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+.our-favourite-items-wrap {
+    padding-bottom: 30px;
+}
+.home__pinboard-wrap {
+    padding-bottom: 40px;
+}
+
+.carousel__wrap {
+    position: relative;
+    .carousel-anchor {
+        position: absolute;
+        bottom: 30px;
+        @include calc(left, "50% - 15px");
+        z-index: map-get($zindex,  zCarouselWrap);
+        width: 30px;
+        height: 15px;
+        .svg-arrow-down {
+            opacity: .7;
+            color: rgba(218,212,202,.7);
+            fill: currentColor;
+        }
+    }
+}
+.owl-carousel {
+    .item {
+        position: relative;
+        background-color: $brand-gray;
+        background-size: cover;
+        width: 100%;
+        min-height: 360px;
+        @media all and (min-width: $tab-min) {
+            min-height: 570px;
+        }
+        .carousel__cta-wrap {
+            z-index: map-get($zindex,  zCarouselCtaWrap);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .carousel__cta-wrap--inner {
+                padding-left: 10px;
+                padding-right: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                max-width: 520px;
+                @media all and (min-width: $screen-md) {
+                    max-width: 720px;
+                }
+                .carousel__btn-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    .btn {
+                        @media (max-width: $mob-max ) {
+                            font-size: 16px;
+                            padding: 4px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.carousel__title {
+    margin: 0;
+    color: #FFF;
+    font-size: 28px;
+    line-height: 1;
+    text-transform: uppercase;
+    @media (min-width: $fab-min) {
+        font-size: 34px;
+    }
+    @media (min-width: $tab-min) {
+        font-size: 46px;
+    }
+    @media (min-width: $desk-min) {
+        font-size: 60px;
+    }
+}
+.carousel__copy {
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    @media (min-width: $tab-min) {
+        font-size: 24px;
+    }
+}
+.carousel__cta1 {
+    margin-right: 5px;
+    @media all and (min-width: $tab-min) {
+        margin-right: 15px;
+    }
+}
+.carousel__cta2 {
+    margin-left: 5px;
+    @media all and (min-width: $tab-min) {
+        margin-left: 15px;
+    }
+}
+@media all and (-ms-high-contrast:none) {
+    .carousel__title, .carousel__copy {
+        max-width: 720px;
+    }
+}

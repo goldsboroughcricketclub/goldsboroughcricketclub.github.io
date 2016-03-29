@@ -18,6 +18,10 @@ app.category = require('./app/app-category')().init();
 app.pinboard = require('./app/app-pinboard')().init();
 app.popup = require('./app/module-magnific-popup')().init();
 
+
+
+
+
 // app.index = require('./app/app-index')().init();
 
 /*

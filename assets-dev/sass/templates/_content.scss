@@ -1,0 +1,34 @@
+.template--scp {
+    img {
+        max-width: 100%;
+    }
+    @media (min-width: $tab-min) {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.template--content {
+
+}
+
+
+
+.navigation__sidebar-wrap {
+    margin-bottom: 40px;
+    @media all and (min-width: $tab-min) {
+        margin-bottom: 0;
+    }
+
+}
+
+.content__main-wrap {
+
+
+}
+
+
+
+

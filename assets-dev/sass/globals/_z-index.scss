@@ -1,0 +1,22 @@
+$zindex: (
+  zHeaderSearch                 : 7,
+  zDropDown                     : 6,
+  zMobMenu                      : 6,
+  zOverlay                      : 5,
+  zPinBtn                       : 4,
+  zSalesStrip                   : 4,
+  zCarouselCtaWrap              : 4,
+  zProductControlsWrap          : 3,
+  zProductInfoOverlayInner      : 2,
+  zProductInfoOverlayOuter      : 3,
+  zCarouselWrap                 : 3,
+  zPinCircle                    : 1,
+  zDropDownBackdrop             : 1,
+  zProductImageOverlay          : 1
+);
+
+
+  // z-index: map-get($zindex,  zHeaderSearch);
+
+
+

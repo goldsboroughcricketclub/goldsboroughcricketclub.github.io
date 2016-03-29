@@ -1,0 +1,404 @@
+.logo {
+    img {
+        width: 100%;
+        @media all and (min-width: $fab-min) {
+            width: auto;
+        }
+        @media all and (min-width: $tab-min) {
+            max-width: 280px;
+        }
+        @media all and (min-width: $tab-max) {
+            max-width: 100%;
+        }
+    }
+}
+
+
+.svg-active {
+    @include anim-all(200ms, ease-in-out);
+    color: $brand-green;
+    fill: currentColor;
+}
+
+
+.svg-user {
+    width: 15px;
+    height: 15px;
+}
+.svg-phone {
+    width:15px;
+    height: 15px;
+}
+.svg-magnify {
+    width: 15px;
+    height: 15px;
+}
+.svg-magnify-input {
+    width: 15px;
+    height: 15px;
+}
+.svg-basket {
+    width: 20px;
+    height: 15px;
+}
+.svg-menu {
+    width:15px;
+    height: 12px;
+}
+
+@media all and (min-width: $tab-min) {
+    .svg-user {
+        width: 20px;
+        height: 20px;
+    }
+    .svg-phone {
+        width:20px;
+        height: 20px;
+    }
+    .svg-magnify {
+        width: 20px;
+        height: 20px;
+    }
+    .svg-basket {
+        width: 24px;
+        height: 20px;
+    }
+    .svg-menu {
+        width:18px;
+        height: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.svg-tech-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.btn {
+  .svg-plus-circle-small {
+    color: #FFF;
+    fill: currentColor;
+}
+}
+
+
+
+.show-plus {
+    background-image: url(../images/svg/plus.svg);
+    width: 10px;
+    height: 10px;
+    transition: 100ms ease-in-out;
+}
+.show-minus {
+    background-image: url(../images/svg/minus.svg);
+    width: 10px;
+    height: 10px;
+    transition: 100ms ease-in-out;
+}
+
+.indicator {
+    float: right;
+}
+
+
+
+.svg-icon {
+    fill: $brand-gray;
+    @include anim-all(200ms, ease-in-out);
+    &:hover {
+        color: $brand-green;
+        fill: currentColor;
+    }
+}
+
+
+
+.video-wrap {
+
+}
+
+
+
+
+.svg-video-play {
+    width: 110px;
+    height: 110px;
+    fill: #FFF;
+}
+.video-wrap {
+    @include anim-bg-col(200ms, ease-in-out);
+    &:hover {
+        .svg-video-play {
+            color: $brand-green;
+            fill: currentColor;
+        }
+    }
+}
+
+
+
+.svg-new {
+    width: 44px;
+    height: 20px;
+}
+
+.svg-sale {
+    width: 43px;
+    height: 20px;
+}
+
+.svg-instock {
+    width: 70px;
+    height: 20px;
+}
+
+
+
+.share-icon, .pin-button, .zoom-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    @include anim-all(200ms, ease-in-out);
+}
+
+.share-icon {
+    background-image: url(../images/svg/share-icon.svg);
+    &:hover {
+        background-image: url(../images/svg/share-icon-hover.svg);
+        cursor: pointer;
+    }
+}
+
+.zoom-icon {
+    background-image: url(../images/svg/zoom-icon.svg);
+    &:hover {
+        background-image: url(../images/svg/zoom-icon-hover.svg);
+    }
+}
+
+
+
+
+
+
+// This has js active state
+.pin-button {
+    &:hover {
+        background-image: url(../images/svg/pin-icon-hover.svg);
+    }
+}
+.pin-icon-inactive {
+    background-image: url(../images/svg/pin-icon.svg);
+}
+.pin-icon-active {
+    background-image: url(../images/svg/pin-icon-pressed.svg);
+    &:hover {
+        background-image:  url(../images/svg/pin-icon-pressed-hover.svg);
+    }
+}
+
+
+
+.mob-menu{
+    flex-basis: 100%;
+    &:hover {
+        .svg-menu {
+            color: $brand-green;
+            fill: currentColor;
+        }
+    }
+}
+
+
+
+
+
+.svg-zoom {
+    width: 20px;
+    height: 20px;
+}
+
+
+.svg-pin-circle {
+  width: 70px;
+  height: 70px;
+
+}
+
+.svg-plus-circle {
+    width: 20px;
+    height: 20px;
+}
+
+
+.svg-plus-circle-small {
+    width: 11px;
+    height: 11px;
+}
+
+
+.svg-chev-down {
+    width: 9px;
+    height: 6px;
+}
+
+.svg-note {
+    width: 11px;
+    height: 11px;
+}
+
+
+.svg-doc {
+    width: 14px;
+    height: 11px;
+}
+
+.svg-top-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.svg-arrow-down {
+    width: 30px;
+    height: 18px;
+}
+.svg-arrow-left {
+    width: 30px;
+    height: 50px;
+}
+.svg-arrow-right {
+    width: 30px;
+    height: 50px;
+}
+
+
+
+.svg-checkmark {
+    width: 15px;
+    height: 15px;
+}
+.svg-chev-up {
+    width: 14px;
+    height: 9px;
+}
+.svg-close {
+    width: 11px;
+    height: 11px;
+}
+.svg-download {
+    width: 28px;
+    height: 30px;
+}
+.svg-enquire-item {
+    width: 12px;
+    height: 12px;
+}
+.svg-facebook {
+    width: 13px;
+    height: 24px;
+}
+
+.svg-padlock {
+    width:8px;
+    height: 11px;
+}
+.svg-pagination-left {
+    width: 7px;
+    height: 11px;
+}
+.svg-pagination-right {
+    width: 7px;
+    height: 11px;
+}
+
+.svg-pin-map {
+    width: 30px;
+    height: 42px;
+}
+.svg-pin {
+    width: 20px;
+    height: 20px;
+}
+.svg-pinterest {
+    width: 24px;
+    height: 24px;
+}
+.svg-plus-minus {
+    width: 10px;
+    height: 10px;
+}
+.svg-plus {
+    width: 11px;
+    height: 11px;
+}
+.svg-send-icon {
+    width: 20px;
+    height: 18px;
+}
+.svg-sort-by-up {
+    width: 15px;
+    height: 15px;
+}
+.svg-sort-by-down {
+    width: 15px;
+    height: 15px;
+}
+.svg-twitter {
+    width: 28px;
+    height: 24px;
+}
+
+
+// .xxxx {
+//     .svg-icon {
+//         color: $brand-gray;
+//         fill: currentColor;
+//     }
+//     &:hover {
+//         background-color: $brand-green;
+//         .svg-icon {
+//             color: #FFF;
+//             fill: currentColor;
+//         }
+//     }
+// }
+
+// .frag {
+//     display: block;
+//     width: 24px;
+//     height: 24px;
+//     border: solid 1px #CCC;
+//     background-image: url('../svg-icons/svg-icons.svg#pinterest(viewBox(0,0,24,24)') no-repeat;
+// }
+
+
+
+
+//     a {
+//         float: left;
+//         display: block;
+//         width: 40px;
+//         height: 40px;
+
+//         .svg-social-icon-bg {
+//            @include anim-svg-fill();
+//        }
+//        &:hover {
+//         .svg-social-icon-bg {
+//             fill: $brand-tertiary;
+//         }
+//     }
+// }

@@ -1,0 +1,97 @@
+
+.js-issue-number-wrap {
+    display: none;
+}
+
+.checkout__form-wrap {
+
+
+    ol {
+        padding: 0;
+    }
+    .template--checkout & {
+        padding-top: 30px;
+    }
+
+
+    .checkout__fieldset-login {
+    }
+
+    .checkout__fieldset-billing {
+        margin-top: 30px;
+    }
+
+    .checkout__fieldset-delivery {
+
+    }
+
+    .same-as-billing-wrap {
+        margin-bottom: 20px;
+    }
+
+    .main-title {
+        text-align: center;
+    }
+
+
+    @media (max-width: $mob-max ) {
+        .btn {
+            width: 100%;
+        }
+    }
+
+
+    .checkout__fieldset-login {
+        ol  ol {
+            li {
+            }
+            @media screen and (max-width: $mob-max ) {
+
+                li:nth-of-type(2) {
+                    float: left;
+                }
+                li:nth-of-type(3) {
+                    float: left;
+                }
+            }
+        }
+    }
+
+}
+
+
+.label__push-left {
+    @media (min-width: $fab-min) {
+        margin-left: 30px !important;
+    }
+}
+
+.btn-continue-payment {
+    border: none;
+}
+
+
+
+
+.contact__form-wrap .checkout__fieldset-login  ol {
+    li.enter-password-wrap {
+        width: 100%;
+        li {
+            width: 100%;
+        }
+        @media (min-width: $fab-min) {
+            li:first-of-type {
+                flex: 0 0 50%;
+                @include calc(flex-basis, "50% - 10px");
+            }
+            li:last-of-type {
+                flex: 0 0 50%;
+                @include calc(flex-basis, "50% - 10px");
+            }
+        }
+    }
+}
+
+#js-international-msg { display:none; }
+
+#update-delivery-container { display:none; }

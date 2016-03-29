@@ -1,0 +1,243 @@
+.template--product {
+}
+
+
+
+.pin-to-board {
+    position: relative;
+    margin-bottom: 20px;
+    .svg-icon {
+        position: absolute;
+        right: 10px;
+        color: $brand-gray;
+        fill: currentColor;
+    }
+    &:hover {
+        .svg-pin {
+            fill: #FFF;
+        }
+    }
+}
+.add-to-basket {
+    position: relative;
+    margin-bottom: 20px;
+    .svg-icon {
+        color: #FFF;
+        fill: currentColor;
+        position: absolute;
+        @include calc(top, "50% - 10px");
+        right: 10px;
+    }
+}
+.btn-toggle {
+    position: relative;
+    .svg-icon {
+        position: absolute;
+        @include calc(top, "50% - 5px");
+        right: 10px;
+    }
+    &:hover {
+        .svg-icon {
+            fill: #FFF;
+        }
+    }
+}
+
+#relatedProductAccordion {
+    .btn-toggle {
+        .svg-chev-up {
+            transform: rotateX(0deg);
+        }
+    }
+
+    .btn-toggle.collapsed {
+        .svg-chev-up {
+            transform: rotateX(180deg);
+        }
+    }
+}
+
+
+
+.product__form {
+    .btn {
+        width: 100%;
+    }
+    .btn-disabled {
+        &:hover {
+            cursor: default;
+        }
+    }
+}
+.product__price-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .price-wrap {
+        margin-bottom: 0;
+    }
+    .input-count-wrap {
+        input {
+            width: 100%;
+        }
+    }
+    .now-price, .was-price {
+        font-size: 30px;
+    }
+    .now-price {
+        font-family: $font-family-bold;
+    }
+    .was-price {
+    }
+}
+.product__vat {
+    position: relative;
+    top: -5px;
+    font-size: 14px;
+}
+.download-technical-drawing {
+    text-decoration: underline;
+    .svg-icon {
+        position: relative;
+        top: 8px;
+        margin-right: 20px;
+    }
+}
+.product__status-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    .svg-icon {
+        margin-right: 10px;
+    }
+}
+.product__title {
+    text-align: center;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.product__sku {
+    text-align: center;
+    font-size: 14px;
+}
+.product__info {
+    text-align: center;
+}
+
+.product__breadcrumb-strip {
+    @media (min-width: $tab-min) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .breadcrumb {
+        padding: 0px 15px 8px;
+    }
+
+    .product__enquiry {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:hover {
+            .svg-icon {
+                fill: $brand-green;
+            }
+
+        }
+        .svg-icon {
+            margin-left: 5px;
+
+        }
+    }
+}
+
+.product__also-need-wrap {
+    margin-bottom: 25px;
+}
+
+.product__add-basket-anchor {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        margin-right: 5px;
+    }
+    a {
+        color: $brand-red;
+        text-decoration: underline;
+    }
+}
+
+
+.panel-title {
+    .add-to-basket {
+        color: #FFF;
+    }
+}
+.product__in-stock {
+    margin-bottom: 20px;
+    text-align: center;
+    strong {
+    }
+}
+
+
+.product__thumbs-wrap {
+    [class*="col-"] {
+        margin-bottom: 20px;
+    }
+    a {
+        display: block;
+        @include pie-clearfix();
+        border: solid 2px transparent;
+        @include anim-brd-col(200ms, ease-in-out);
+        &:hover {
+            border: solid 2px $brand-green;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.product-thumb-active {
+    border: solid 2px $brand-gray !important;
+}
+
+
+.tech-icons-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+    li {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        .svg-tech-icon {
+            margin-right: 20px;
+        }
+        .svg-tech-icon-info {
+            font-size: 16px;
+        }
+    }
+}
+
+
+.product__products-accordion {
+    .panel-body {
+        padding: 20px 0px 0px;
+    }
+}
+
+.product__delivery-anchor {
+    text-decoration: underline;
+}

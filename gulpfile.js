@@ -19,10 +19,8 @@ var gulp = require('gulp'),
   filesize = require('gulp-filesize'),
   spritesmith = require('gulp.spritesmith'),
   svgstore = require('gulp-svgstore');
-plumber = require('gulp-plumber'),
-  rename = require('gulp-rename'),
-  bump = require('gulp-bump'),
-  sassLint = require('gulp-sass-lint');
+  plumber = require('gulp-plumber'),
+  rename = require('gulp-rename');
 
 
 gulp.task('browser-sync', function() {
@@ -32,7 +30,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('markup', function() {
-  return gulp.src('application/views/scripts/templates/**/*.phtml')
+  return gulp.src('http://localhost/user/goldsboroughcricketclub.github.io/**/*.html')
     .pipe(browserSync.reload({
       stream: true
     }));
@@ -45,17 +43,17 @@ gulp.task('markup', function() {
  */
 
 gulp.task('sprite', function() {
-  var spriteData = gulp.src('httpdocs/assets-dev/images/icons/*.png').pipe(spritesmith({
+  var spriteData = gulp.src('assets-dev/images/icons/*.png').pipe(spritesmith({
     imgName: 'icons.png',
     cssName: '_sprite-icons.scss',
     padding: 20,
-    imgPath: 'httpdocs/assets-dev/images/sprites/icons.png'
+    imgPath: 'assets-dev/images/sprites/icons.png'
   }));
 
   spriteData.img
     .pipe(gulp.dest('assets/images/sprites/'));
   spriteData.css
-    .pipe(gulp.dest('httpdocs/assets-dev/sass/sprites/'));
+    .pipe(gulp.dest('assets-dev/sass/sprites/'));
 });
 
 
@@ -69,7 +67,7 @@ gulp.task('sprite', function() {
 
 gulp.task('svgstore', function() {
   return gulp
-    .src('httpdocs/assets-dev/svg-icons/*.svg')
+    .src('assets-dev/svg-icons/*.svg')
     // .pipe(svgmin()) // (needs testing)
     .pipe(svgstore({
       inlineSvg: true
@@ -81,7 +79,7 @@ gulp.task('svgstore', function() {
 gulp.task('libscripts', function() {
   // set up the browserify instance on a task basis
   var a = browserify({
-    entries: 'httpdocs/assets-dev/js/libraries.js',
+    entries: 'assets-dev/js/libraries.js',
     debug: true
   });
 
@@ -102,7 +100,7 @@ gulp.task('libscripts', function() {
 gulp.task('js', function() {
   // set up the browserify instance on a task basis
   var b = browserify({
-    entries: 'httpdocs/assets-dev/js/main.js',
+    entries: 'assets-dev/js/main.js',
     debug: true
   });
 
@@ -128,7 +126,7 @@ gulp.task('js', function() {
  */
 
 gulp.task('styles', function() {
-  gulp.src('httpdocs/assets-dev/sass/main.scss') // removing return enables the sass to restart after error fix
+  gulp.src('assets-dev/sass/main.scss') // removing return enables the sass to restart after error fix
 
   // Initialise sourcemaps prior to compiling SASS.
   .pipe(sourcemaps.init())
@@ -181,5 +179,5 @@ gulp.task('default', ['browser-sync', 'watch', 'styles', 'libscripts', 'js']);
 gulp.task('watch', function() {
   gulp.watch('assets-dev/sass/**/*.scss', ['styles']);
   gulp.watch('assets-dev/js/**/*.js', ['js', browserSync.reload]);
-  gulp.watch('/**/*.html', ['markup']);
+  // gulp.watch('/**/*.html', ['markup']);
 });

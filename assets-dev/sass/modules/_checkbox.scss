@@ -1,0 +1,175 @@
+$radioCheckDimensions: 15px;
+
+
+
+
+
+.filter__list {
+    li label {
+        &:hover {
+            @include anim-col(200ms, ease-in-out);
+            color: $brand-green;
+
+        }
+    }
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: solid 2px $brand-gray;
+    background-color: #FFF;
+    width: $radioCheckDimensions;
+    height: $radioCheckDimensions;
+    top: 4px;
+}
+
+[type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: $radioCheckDimensions;
+    height: $radioCheckDimensions;
+    background-image: url(../images/svg/checkbox-checked.svg);
+    @include anim-all(200ms, ease-in-out);
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+[type="checkbox"]:hover + label:before {
+    @include anim-all(200ms, ease-in-out);
+    border: solid 2px $brand-green;
+}
+
+
+
+
+
+
+
+// --------------------
+//
+//
+
+
+
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+[type="radio"]:not(:checked) + label:before, [type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: solid 2px $brand-gray;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: $radioCheckDimensions;
+    height: $radioCheckDimensions;
+    top: 4px;
+
+}
+
+[type="radio"]:not(:checked) + label:after, [type="radio"]:checked + label:after {
+    content: '';
+    position: absolute;
+
+    top: 4px;
+    left: 0;
+    width: $radioCheckDimensions;
+    height: $radioCheckDimensions;
+    background-color: $brand-gray;
+    border-radius: 50%;
+
+
+    @include anim-all(200ms, ease-in-out);
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+[type="radio"]:hover + label:before {
+    @include anim-all(200ms, ease-in-out);
+    border: solid 2px $brand-green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
